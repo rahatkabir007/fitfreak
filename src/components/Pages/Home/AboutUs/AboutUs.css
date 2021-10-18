@@ -1,0 +1,24 @@
+.right-area{
+    margin-top: 60px;
+    
+}
+.right-area h1{
+    color: red;    
+}
+.right-area p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:688px) {
+   .right-area {
+       margin-top: 10px;
+
+   }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 1400px) {
+ .right-area {
+     margin-top: 0px;
+
+ }
+}

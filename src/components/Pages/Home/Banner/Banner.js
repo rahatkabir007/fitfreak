@@ -12,7 +12,7 @@ const Banner = () => {
                     to: { opacity: 1 }, reset: true,
                     reverse: flip,
                     delay: 200, onRest: () => set(!flip), from: { opacity: 0 }
-                })}> <a href="/signup" className="banner-btn bounce-in-top">Join Now</a></animated.div>
+                })}> <a href="/signup" className="primary-btn">Join Now</a></animated.div>
                
            </div>
            

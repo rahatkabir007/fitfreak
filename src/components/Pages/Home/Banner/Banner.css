@@ -6,14 +6,14 @@
     height: 700px;
     margin-bottom: 20px;
 }
-.banner-btn{
+.primary-btn {
     padding: 5px 30px;
     background-color: red;
     font-size: 30px;
     color: white;
     text-decoration: none;
 }
-.banner-btn:hover{
+.primary-btn:hover {
     color: white;
 }
 
@@ -21,7 +21,7 @@
 .banner-div {
     height: 10.8em;
 }
-.banner-btn {
+.primary-btn {
     padding: 4px 13px;
     background-color: red;
     font-size: 15px;
