@@ -10,6 +10,7 @@ const AboutUs = () => {
                 </div>
                 <div className="right-area col-lg-6 p-4">
                     <h1>About Us</h1>
+                    <hr/>
                     <p>Our motto says it all:  “FitFreak - The Online Resource for Fitness Professionals.” FitFreak specializes and tailors certifications to those who already work in the fitness industry and have an extensive pre-existing knowledge in the area. FitFreak helps you specialize your continuing education and marketability by testing in industry-specific fields. Take one of our tests today. Pay only if you pass!</p>
                     <a href="/aboutus" className="primary-btn">Read More!</a>
                 </div>

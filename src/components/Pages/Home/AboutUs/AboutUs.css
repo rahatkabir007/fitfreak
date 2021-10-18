@@ -5,6 +5,10 @@
 .right-area h1{
     color: red;    
 }
+.right-area hr {
+    width: 20%;
+    background-color: red;
+}
 .right-area p{
     font-size: 20px;
 }

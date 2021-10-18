@@ -1,0 +1,8 @@
+.goals-section h1{
+ color: red;
+}
+.goals-section hr{
+    width: 10%;
+    margin: 0 auto 10px auto;
+    background-color: red;
+}

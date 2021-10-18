@@ -1,0 +1,11 @@
+.goal-card{
+    background-color: black;
+}
+.goal-section img{
+    width: 25%;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+}
+.goal-text{
+    font-size: 20px;
+}

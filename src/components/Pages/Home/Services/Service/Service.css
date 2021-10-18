@@ -1,0 +1,23 @@
+.service-card{
+    background-color: rgba(0, 0, 0, 0.849);
+}
+.service-card:hover{
+    width: 25rem;
+}
+.service-text {
+    font-size: 20px;
+}
+.service-text h2{
+    color: red;
+}
+.details-btn {
+    padding: 4px 13px;
+    background-color: red;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.details-btn:hover{
+    color: black;
+}
