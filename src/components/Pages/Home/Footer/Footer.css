@@ -4,6 +4,9 @@
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
+     border-radius: 0px;
+     box-shadow: inset 0px 0px 18px #d0d0d0,
+     inset -7px -7px 18px #f0f0f0;
 }
 
 .second-section {
