@@ -1,0 +1,37 @@
+.banner-div{
+    background-image: url('../../../../images/banner2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-bottom: 20px;
+}
+.banner-btn{
+    padding: 5px 30px;
+    background-color: red;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.banner-btn:hover{
+    color: white;
+}
+
+@media only screen and (max-width:688px){
+.banner-div {
+    height: 10.8em;
+}
+.banner-btn {
+    padding: 4px 13px;
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+}
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .banner-div {
+        height: 22em;
+    }
+}

@@ -5,13 +5,13 @@ import logo from '../../../../images/logo.png';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Navbar collapseOnSelect sticky="top" expand="lg" className="navbar">
                 <Container>
                     <div className="d-flex">
                         <Navbar.Brand href="#home"><img className='logo-img' src={logo} alt="" /></Navbar.Brand>
-                        <Navbar.Toggle/>
-                   </div>
+                        <Navbar.Toggle />
+                    </div>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className='nav'>
                             <Nav.Link href="#home">Home</Nav.Link>
@@ -29,7 +29,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 
