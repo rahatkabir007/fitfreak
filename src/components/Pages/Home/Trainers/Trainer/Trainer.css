@@ -1,0 +1,31 @@
+.trainer-section {
+    padding: 0px;
+
+}
+
+.trainer-card {
+    width: 80%;
+    height: 80%;
+    background-color: #0d0d0d;
+}
+
+.trainer-card img {
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.trainer-text h2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+}
+
+.trainer-text hr {
+    width: 10%;
+    margin: 0 auto 10px auto;
+    background-color: red;
+    padding: 0px;
+
+}

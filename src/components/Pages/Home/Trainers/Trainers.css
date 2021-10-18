@@ -1,0 +1,15 @@
+.trainers-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.trainers-section h1 {
+    color: red;
+}
+
+.trainers-section hr {
+    width: 10%;
+    margin: 0 auto 10px auto;
+    background-color: red;
+}

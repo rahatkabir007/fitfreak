@@ -1,9 +1,6 @@
 .service-card{
     background-color: rgba(0, 0, 0, 0.849);
 }
-.service-card:hover{
-    width: 25rem;
-}
 .service-text {
     font-size: 20px;
 }
