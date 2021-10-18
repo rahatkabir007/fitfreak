@@ -1,10 +1,17 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './components/Pages/Home/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Pages/Home/Header/Header';
-import Footer from './components/Pages/Home/Footer/Footer';
+import Home from './components/Pages/Home/Home';
+import AboutPage from './components/Pages/AboutPage/AboutPage';
+import ServicePage from './components/Pages/ServicePage/ServicePage';
+import Blog from './components/Pages/Blog/Blog';
+import Gallery from './components/Pages/Gallery/Gallery';
+import Signup from './components/Pages/Signup/Signup';
+import SignIn from './components/Pages/SignIn/SignIn';
 import NotFound from './components/Pages/notFound/NotFound';
+import Footer from './components/Pages/Home/Footer/Footer';
+
 
 function App() {
   return (
@@ -19,22 +26,22 @@ function App() {
             <Home></Home>
           </Route>
           <Route path='/about'>
-            <Home></Home>
+            <AboutPage></AboutPage>
           </Route>
           <Route path='/services'>
-            <Home></Home>
+            <ServicePage></ServicePage>
           </Route>
           <Route path='/blog'>
-            <Home></Home>
+            <Blog></Blog>
           </Route>
           <Route path='/gallery'>
-            <Home></Home>
+            <Gallery></Gallery>
           </Route>
           <Route path='/signup'>
-            <Home></Home>
+            <Signup></Signup>
           </Route>
           <Route path='/signin'>
-            <Home></Home>
+            <SignIn></SignIn>
           </Route>
           <Route path='*'>
            <NotFound></NotFound>
