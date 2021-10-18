@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Service from '../Services/Service/Service';
 import './Services.css';
 
@@ -19,9 +18,6 @@ const Services = () => {
                     {
                         services.map(service => <Service key={service.key} service={service}></Service>)
                     }
-                </div>
-                <div className="text-center mt-4">
-                    <Link to="/services" className="primary-btn ">Load More..</Link>
                 </div>
            </div>
         </div>

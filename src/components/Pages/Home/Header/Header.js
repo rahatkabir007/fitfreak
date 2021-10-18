@@ -10,7 +10,7 @@ const Header = () => {
             <Navbar collapseOnSelect sticky="top" expand="lg" className="navbar">
                 <Container>
                     <div className="d-flex">
-                        <Navbar.Brand href="#home"><img className='logo-img' src={logo} alt="" /></Navbar.Brand>
+                        <Navbar.Brand as = {HashLink} to= "/home"><img className='logo-img' src={logo} alt="" /></Navbar.Brand>
                         <Navbar.Toggle />
                     </div>
                     <Navbar.Collapse className="justify-content-end">

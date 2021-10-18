@@ -1,0 +1,22 @@
+.servicepage-section{
+     background-image: url("https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+}
+.servicepage-section h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: 5px solid #fff;
+    letter-spacing: 5px;
+}
