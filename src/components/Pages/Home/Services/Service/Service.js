@@ -7,7 +7,7 @@ const Service = ({ service }) => {
         <div className="col-md-6 col-lg-6 col-xxl-4 service-section mt-3">
             <div className="card service-card h-100 mx-auto " style={{ width: "18rem" }}>
                 <img src={image} className="card-img-top " alt="..." />
-                <div class="card-body text-center service-text">
+                <div className="card-body text-center service-text">
                     <h2 className="card-title">{name}</h2>
                     <p className="card-text">{description}</p>
                 </div>

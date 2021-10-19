@@ -12,47 +12,51 @@ import NotFound from './components/Pages/notFound/NotFound';
 import Footer from './components/Pages/Home/Footer/Footer';
 import Blogs from './components/Pages/Blogs/Blogs';
 import ServiceDetails from './components/Pages/ServiceDetails/ServiceDetails';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/Pages/SignIn/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/about'>
-            <AboutPage></AboutPage>
-          </Route>
-          <Route path='/services'>
-            <ServicePage></ServicePage>
-          </Route>
-          <Route path='/servicedetails/:serviceKey'>
-            <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route path='/blogs'>
-            <Blogs></Blogs>
-          </Route>
-          <Route path='/gallery'>
-            <Gallery></Gallery>
-          </Route>
-          <Route path='/signup'>
-            <Signup></Signup>
-          </Route>
-          <Route path='/signin'>
-            <SignIn></SignIn>
-          </Route>
-          <Route  path='*'>
-           <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-     </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route path='/about'>
+              <AboutPage></AboutPage>
+            </Route>
+            <Route path='/services'>
+              <ServicePage></ServicePage>
+            </Route>
+            <PrivateRoute path='/servicedetails/:serviceKey'>
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <Route path='/blogs'>
+              <Blogs></Blogs>
+            </Route>
+            <Route path='/gallery'>
+              <Gallery></Gallery>
+            </Route>
+            <Route path='/signup'>
+              <Signup></Signup>
+            </Route>
+            <Route path='/signin'>
+              <SignIn></SignIn>
+            </Route>
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+    </AuthProvider>
     </div>
   );
 }

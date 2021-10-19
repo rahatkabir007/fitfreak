@@ -10,7 +10,14 @@
     border-bottom: 1px solid transparent;
 }
 
-.nav a {
+.nav a{
+   
+    font-size: 18px;
+    color: black !important;
+
+}
+.nav p{
+    margin-bottom: 0px;
     font-size: 18px;
     color: black !important;
 
@@ -24,7 +31,7 @@
      box-sizing: border-box;
 
 }
- .nav #contact {
+ .nav #gallery {
      border-right: 1px solid red;
      margin-right: 2px;
  }
@@ -41,7 +48,7 @@
         width: 20%;
       
     }
-    .nav #contact {
+    .nav #gallery {
         border-right: none;
        
        

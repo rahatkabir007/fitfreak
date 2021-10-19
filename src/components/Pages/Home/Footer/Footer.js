@@ -18,9 +18,9 @@ const Footer = () => {
                 <div className="contact-us">
                     <ul>
                         <li className="text-center">Contact Us</li>
-                        <li><i class="fas fa-phone"></i>  +88018942323324</li>
-                        <li><i class="fas fa-envelope-open"></i>  fitfreak@gmail.com</li>
-                        <li><i class="fas fa-address-card"></i>  24 Street, California,USA</li>
+                        <li><i className="fas fa-phone"></i>  +88018942323324</li>
+                        <li><i className="fas fa-envelope-open"></i>  fitfreak@gmail.com</li>
+                        <li><i className="fas fa-address-card"></i>  24 Street, California,USA</li>
                     </ul>
 
                 </div>
