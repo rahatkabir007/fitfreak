@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import initializeAuthentication from '../firebase/Firebase.init';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword ,signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged,sendEmailVerification,updateProfile} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, onAuthStateChanged, signOut } from "firebase/auth";
 
 initializeAuthentication();
 
@@ -10,6 +10,7 @@ const useFirebase = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -17,27 +18,45 @@ const useFirebase = () => {
     const signInUsingGoogle = () => {
         setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
-          
-        
+    }
+    const toggleLogin = e => {
+        setIsLogin(e.target.checked)
     }
     //form behaviour er jonne page reload hoi jai...tai ota prevent korte ei function
-    const handleSignupSignin = e => {
+    const handleRegistration = e => {
         e.preventDefault();
         console.log(email, password);
         if (password.length < 6) {
-            setError('Password Must Be At Least 6 Characters Long!');
+            setError('Password Must be at least 6 characters long.')
             return;
         }
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-            setError('Password Must Contain Two Uppercase');
+            setError('Password Must contain 2 upper case');
             return;
         }
-        createNewUser(email, password);
-        processLogin(email, password);
+
+        if (isLogin) {
+            processLogin(email, password);
+        }
+        else {
+            registerNewUser(email, password);
+        }
+
     }
 
-    const createNewUser = (email, password) => {
-         return createUserWithEmailAndPassword(auth, email, password)
+    const processLogin = (email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
+    const registerNewUser = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -50,27 +69,21 @@ const useFirebase = () => {
             })
     }
 
-    const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user;
-                console.log((user));
-                setError('');
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-    }
-
     const setUserName = () => {
         updateProfile(auth.currentUser, { displayName: name })
-        .then(result => {})
+            .then(result => { })
     }
+
     const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
-            
-        })
+                console.log(result);
+            })
+    }
+
+    const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(result => { })
     }
 
     const handleNameChange = (e) => {
@@ -85,7 +98,7 @@ const useFirebase = () => {
 
         setPassword(e.target.value);
     }
-    
+
     //observing user state change
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {
@@ -98,27 +111,30 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    },[])
+    }, [])
 
     const logOut = () => {
         setIsLoading(true)
         signOut(auth)
             .then(() => { })
-        .finally(()=> setIsLoading(false));
+            .finally(() => setIsLoading(false));
     }
-    
+
     return {
         user,
+        isLogin,
         isLoading,
         error,
-        handleSignupSignin,
+        toggleLogin,
+        handleRegistration,
         handleNameChange,
         handleEmailChange,
         handlePasswordChange,
         signInUsingGoogle,
+        handleResetPassword,
         logOut,
-        
-      
+
+
     }
 };
 

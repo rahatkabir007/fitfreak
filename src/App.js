@@ -6,14 +6,13 @@ import Home from './components/Pages/Home/Home';
 import AboutPage from './components/Pages/AboutPage/AboutPage';
 import ServicePage from './components/Pages/ServicePage/ServicePage';
 import Gallery from './components/Pages/Gallery/Gallery';
-import Signup from './components/Pages/Signup/Signup';
-import SignIn from './components/Pages/SignIn/SignIn';
 import NotFound from './components/Pages/notFound/NotFound';
 import Footer from './components/Pages/Home/Footer/Footer';
 import Blogs from './components/Pages/Blogs/Blogs';
 import ServiceDetails from './components/Pages/ServiceDetails/ServiceDetails';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Pages/SignIn/PrivateRoute/PrivateRoute';
+import SignIn from './components/Pages/SignIn/SignIn';
 
 
 function App() {
@@ -44,11 +43,8 @@ function App() {
             <Route path='/gallery'>
               <Gallery></Gallery>
             </Route>
-            <Route path='/signup'>
-              <Signup></Signup>
-            </Route>
             <Route path='/signin'>
-              <SignIn></SignIn>
+             <SignIn></SignIn>
             </Route>
             <Route path='*'>
               <NotFound></NotFound>

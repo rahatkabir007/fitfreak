@@ -1,5 +1,5 @@
 .signin-section {
-    background-image: url("https://images.pexels.com/photos/162622/facebook-login-office-laptop-business-162622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/128299/pexels-photo-128299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,15 +27,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 90vh;
     border-radius: 20px;
     margin: 40px;
 }
 
 .signinform-area {
-    border: 1px solid rgba(233, 230, 230, 0.301);
+    border: 1px solid rgba(241, 233, 233, 0.603);
     padding: 30px 30px;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.301);
     border-radius: 10px;
 }
 
@@ -44,9 +44,12 @@
     .signinform-area {
         width: 100% !important;
         margin: 0 !important;
+
+
     }
+
     .signin-form {
-        height: 95vh;
+        height: 125vh;
         margin: 0;
     }
 }

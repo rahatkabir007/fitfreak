@@ -24,17 +24,17 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/blogs">Blog</Nav.Link>
                             <Nav.Link as={HashLink} to="/gallery" id="gallery">Gallery</Nav.Link>
                             {user?.email ?
-                                // <Button variant="light" onClick={logOut}>Logout</Button>
+            
                                 <div className= "d-lg-flex">
                                     <Nav.Link onClick={logOut} as={HashLink} to="/home">Sign Out</Nav.Link>
                                     <Navbar.Text>
                                        <p>User: {user?.displayName}</p>
                                     </Navbar.Text>
                                </div>
-                                : < div className="d-lg-flex">
-                                    <Nav.Link as={HashLink} to="/signup" >Sign Up</Nav.Link>
+                                : 
+                                    
                                     <Nav.Link as={HashLink} to="/signin">Sign In</Nav.Link>
-                                </div>
+                                
                             }
                             
                         </Nav>
