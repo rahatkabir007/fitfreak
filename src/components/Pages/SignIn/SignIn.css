@@ -1,3 +1,69 @@
-.signin-section{
+.signin-section {
+    background-image: url("https://images.pexels.com/photos/162622/facebook-login-office-laptop-business-162622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80vh;
+}
+
+.signin-section h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: 5px solid #fff;
+    letter-spacing: 5px;
+}
+
+.signin-form {
+    background-image: url("./images/signinbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.signinform-area {
+    border: 1px solid rgba(233, 230, 230, 0.301);
+    padding: 30px 30px;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+}
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+    .signinform-area {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .signin-form {
+        height: 95vh;
+        margin: 0;
+    }
+}
+
+
+/* Tab */
+
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
+    .signin-form {
+        height: 60vh;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .signin-form {
+        height: 100vh;
+
+    }
 }
