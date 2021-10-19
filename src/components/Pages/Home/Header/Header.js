@@ -33,7 +33,7 @@ const Header = () => {
                                </div>
                                 : 
                                     
-                                    <Nav.Link as={HashLink} to="/signin">Sign In</Nav.Link>
+                                    <Nav.Link as={HashLink} to="/signin">Sign In/Sign Up</Nav.Link>
                                 
                             }
                             

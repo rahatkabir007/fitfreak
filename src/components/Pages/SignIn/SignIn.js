@@ -6,7 +6,7 @@ import './SignIn.css';
 
 initializeAuthentication();
 const SignIn = () => {
-    const { signInUsingGoogle, handleRegistration, handleNameChange, handleEmailChange, handlePasswordChange, handleResetPassword, logOut, error, toggleLogin, isLogin } = useAuth();
+    const { signInUsingGoogle, handleRegistration, handleNameChange, handleEmailChange, handlePasswordChange, handleResetPassword, error, toggleLogin, isLogin } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
@@ -58,7 +58,7 @@ const SignIn = () => {
                         </div>
                         <button type="button" onClick={handleResetPassword} className="mb-2" style={{ color: "white", backgroundColor: "transparent", border: "none" }}>Reset Password</button>
                         <div>
-                            <button type="submit" className="btn primary-btn px-2 py-1 fs-5 mb-2">{isLogin ? 'Login' : 'Register'}</button> <span className="px-2">OR</span> <button onClick={handleGoogleSignIn} className="btn primary-btn px-2 py-1 fs-5 ">Google Sign In</button>
+                            <button type="submit" className="btn primary-btn px-2 py-1 fs-5 mb-2">{isLogin ? 'Sign In' : 'Sign Up'}</button> <span className="px-2">OR</span> <button onClick={handleGoogleSignIn} className="btn primary-btn px-2 py-1 fs-5 mb-2">Google Sign In</button>
                         </div>
                     </form>
 
