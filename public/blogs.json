@@ -1,0 +1,44 @@
+[
+    {
+        "key": "1",
+        "title": "Researchers call for a focus on fitness over weight loss for obesity-related health conditions",
+        "image": "https://images.pexels.com/photos/1092872/pexels-photo-1092872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "The prevalence of obesity around the world has tripled over the past 40 years, and, along with that rise, dieting and attempts to lose weight also have soared. But according to a review article publishing September 20 in the journal iScience, when it comes to getting healthy and reducing mortality risk, increasing physical activity and improving fitness appear to be superior to weight loss. The authors say that employing a weight-neutral approach to the treatment of obesity-related health conditions also reduces the health risks associated with yo-yo dieting."
+    },
+    {
+        "key": "2",
+        "title": "Evening exercise is better for uninterrupted sleep",
+        "image": "https://images.pexels.com/photos/3838339/pexels-photo-3838339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "A new meta-analysis assessed data from 15 published studies to see how a single session of intense exercise affects young and middle-aged healthy adults in the hours prior to bedtime. And while no two bodies are the same, the researchers did find that the combination of factors would interact to enhance or modulate the effects of exercise on sleep.Exercise is often associated positively with a good night's sleep. But if done at certain times of day, or shortly before bedtime, it can also alter how we sleep. And yet despite years of study, there is still much we do not know about how the two are linked."
+    },
+    {
+        "key" : "3",
+        "title": "American’s need at least 5 hours per week of physical activity to prevent some cancers",
+        "image": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "A new report finds more than 46,000 cancer cases annually in the United States could be prevented if Americans met the 5 hours per week of moderate-intensity recommended physical activity guidelines. The latest data appearing in the journal Medicine & Science in Sports & Exercise show 3% of all cancer cases in adults in the U.S. aged 30 years and older during 2013 to 2016 were attributable to physical inactivity and the proportion was higher in women (average annual attributable cases 32,089) compared to men (14,277)."
+    },
+    {
+        "key" : "4",
+        "title": "Healthy changes in diet, activity improved treatment-resistant high blood pressure",
+        "image": "https://images.pexels.com/photos/8173483/pexels-photo-8173483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "People with treatment-resistant hypertension successfully reduced their blood pressure by adopting the Dietary Approaches to Stop Hypertension (DASH) eating plan, losing weight and improving their aerobic fitness by participating in a structured diet and exercise program at a certified cardiac rehabilitation facility, according to new research published today in the American Heart Association's flagship journal Circulation."
+    },
+    {
+        "key" : "5",
+        "title": "Strength training can burn fat too, myth-busting study finds",
+        "image": "https://images.pexels.com/photos/6551097/pexels-photo-6551097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "A new systematic review and meta-analysis shows we can lose around 1.4 per cent of our entire body fat through strength training alone, which is similar to how much we might lose through cardio or aerobics.It's basic exercise knowledge that to gain muscles, you strength train, and to lose fat, you do cardio -- right?"
+    },
+    {
+        "key": "6",
+        "title": "Genes play key role in exercise outcomes",
+        "image": "https://images.pexels.com/photos/4033304/pexels-photo-4033304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "A new study has found that genes play a significant role in how our bodies respond to exercise and has identified a number of specific genes that influence the outcomes of different kinds of physical activity."
+    },
+    {
+        "key": "7",
+        "title": "Research review shows intermittent fasting works for weight loss, health changes",
+        "image": "https://images.pexels.com/photos/3756042/pexels-photo-3756042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "details": "Intermittent fasting can produce clinically significant weight loss as well as improve metabolic health in individuals with obesity, according to a new study review led by University of Illinois Chicago researchers."
+    }
+]

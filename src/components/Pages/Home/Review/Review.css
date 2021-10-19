@@ -13,7 +13,23 @@
     text-align: center;
 }
 @media only screen and (max-width:688px) {
+
+    .review-section h2 {
+        color: red;
+        font-size: 5px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .review-section p {
+        font-size: 10px;
+        text-align: center;
+    }
    .review-section img {
        width: 100% !important;
    }
+   .carousel-inner{
+       width: 100% !important;
+   }
+  
 }

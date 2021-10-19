@@ -5,12 +5,13 @@ import Header from './components/Pages/Home/Header/Header';
 import Home from './components/Pages/Home/Home';
 import AboutPage from './components/Pages/AboutPage/AboutPage';
 import ServicePage from './components/Pages/ServicePage/ServicePage';
-import Blog from './components/Pages/Blog/Blog';
 import Gallery from './components/Pages/Gallery/Gallery';
 import Signup from './components/Pages/Signup/Signup';
 import SignIn from './components/Pages/SignIn/SignIn';
 import NotFound from './components/Pages/notFound/NotFound';
 import Footer from './components/Pages/Home/Footer/Footer';
+import Blogs from './components/Pages/Blogs/Blogs';
+import ServiceDetails from './components/Pages/ServiceDetails/ServiceDetails';
 
 
 function App() {
@@ -31,8 +32,11 @@ function App() {
           <Route path='/services'>
             <ServicePage></ServicePage>
           </Route>
-          <Route path='/blog'>
-            <Blog></Blog>
+          <Route path='/servicedetails/:serviceKey'>
+            <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route path='/blogs'>
+            <Blogs></Blogs>
           </Route>
           <Route path='/gallery'>
             <Gallery></Gallery>
@@ -43,7 +47,7 @@ function App() {
           <Route path='/signin'>
             <SignIn></SignIn>
           </Route>
-          <Route path='*'>
+          <Route  path='*'>
            <NotFound></NotFound>
           </Route>
         </Switch>

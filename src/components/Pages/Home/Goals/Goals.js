@@ -30,10 +30,10 @@ const Goals = () => {
         },
     ]
     return (
-        <div className="mt-3 goals-section container ">
+        <div className="mt-3 goals-section container">
             <h1 className="text-center">Our Goals</h1>
             <hr />
-            <div className="row m-5">
+            <div className="row my-2">
                 {
                  
                     goals.map(goal => <Goal key={goal.key} goal={goal}></Goal>)

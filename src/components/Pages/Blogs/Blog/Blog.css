@@ -1,0 +1,11 @@
+.blog-card {
+    background-color: #191A19;
+}
+
+.blog-text {
+    font-size: 20px;
+}
+
+.blog-text h2 {
+    color: red;
+}
