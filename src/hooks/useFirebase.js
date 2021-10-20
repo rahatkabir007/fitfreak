@@ -46,14 +46,12 @@ const useFirebase = () => {
             setError('Password Must contain 2 upper case');
             return;
         }
-
         if (isLogin) {
             processLogin(email, password);
         }
         else {
             registerNewUser(email, password);
         }
-
     }
 
     //sigin handle
@@ -67,6 +65,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message);
             })
+            
     }
 
     //signup handle
